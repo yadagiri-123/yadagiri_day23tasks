@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            background-color: red;
+            display:grid;
+            grid-template-columns:100px 100px  ; 
+            grid-template-rows:100px 100px 100px ;
+            gap:5px;
+        }
+        #parent div{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div style="grid-column: 1/4;"><h1>Header</h1></div>
+        <div style="grid-row: 2/4;"><h1>Menu</h1></div>
+        <div><h1>Main</h1></div>
+        <div><h1>Right</h1></div>
+        <div style="grid-column: 2/4;"><h1>Footer</h1></div>
+    </div>
+</body>
+</html>
